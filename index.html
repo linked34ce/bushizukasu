@@ -3,7 +3,7 @@
 <head>
     <title>部しずかすボタン</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=960">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="style.css">
     <script>
         let shizuKasu = 0;
@@ -11,24 +11,24 @@
         let buKasu = 0;
 
         function buttonPressed() {
-            document.getElementById("display ").innerHTML = ship();
-            document.getElementById("shizu_kasu ").innerHTML = shizuKasu + "回 ";
-            document.getElementById("bu_shizu ").innerHTML = buShizu + "回 ";
-            document.getElementById("bu_kasu ").innerHTML = buKasu + "回 ";
-            document.getElementById("sum ").innerHTML = shizuKasu + buShizu + buKasu + "回 ";
+            document.getElementById("display").innerHTML = ship();
+            document.getElementById("shizu_kasu").innerHTML = shizuKasu + "回";
+            document.getElementById("bu_shizu").innerHTML = buShizu + "回";
+            document.getElementById("bu_kasu").innerHTML = buKasu + "回";
+            document.getElementById("sum").innerHTML = shizuKasu + buShizu + buKasu + "回";
         }
 
         function ship() {
             let shipping;
             if (Math.random() < 0.8) {
                 shizuKasu += 1;
-                shipping = "しずかす "
+                shipping = "しずかす"
             } else if (Math.random() < 0.95) {　　
                 buShizu += 1;
-                shipping = "部しず "
+                shipping = "部しず"
             } else if (Math.random() < 1) {
                 buKasu += 1;
-                shipping = "部かす "
+                shipping = "部かす"
             }
             return shipping;
         }
@@ -36,24 +36,24 @@
 </head>
 
 <body>
-    <div id="display ">部しずかすボタン</div>
-    <button id="button " onclick="buttonPressed() ">PUSH</button>
-    <table id="result ">
+    <div id="display">部しずかすボタン</div>
+    <button id="button" onclick="buttonPressed() ">PUSH</button>
+    <table id="result">
         <tr>
             <td>しずかす:&nbsp;</td>
-            <td id="shizu_kasu " class="times ">0回</td>
+            <td id="shizu_kasu" class="times">0回</td>
         </tr>
         <tr>
             <td>部しず: </td>
-            <td id="bu_shizu " class="times ">0回</td>
+            <td id="bu_shizu" class="times">0回</td>
         </tr>
         <tr>
             <td>部かす: </td>
-            <td id="bu_kasu " class="times ">0回</td>
+            <td id="bu_kasu" class="times">0回</td>
         </tr>
         <tr>
             <td>合計: </td>
-            <td id="sum " class="times ">0回</td>
+            <td id="sum" class="times">0回</td>
         </tr>
     </table>
 </body>

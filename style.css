@@ -1,0 +1,39 @@
+#button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font: 5vmax Arial;
+    line-height: 150%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#display {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font: 7vmax Arial;
+    line-height: 150%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#result {
+    margin-top: 7%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font: 3vmax Arial;
+    line-height: 150%;
+    white-space: nowrap;
+}
+
+.times {
+    text-align: right;
+}

@@ -1,18 +1,10 @@
-#button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font: 5vmax Arial;
-    line-height: 150%;
-    text-align: center;
-    white-space: nowrap;
+body {
+    touch-action: manipulation;
 }
 
 #display {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -22,10 +14,24 @@
     white-space: nowrap;
 }
 
+button {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    line-height: 150%;
+    text-align: center;
+}
+
+#push {
+    top: 35%;
+    font: 4vmax Arial;
+}
+
 #result {
     margin-top: 7%;
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -36,4 +42,9 @@
 
 .times {
     text-align: right;
+}
+
+#reset {
+    top: 90%;
+    font: 2vmax Arial;
 }

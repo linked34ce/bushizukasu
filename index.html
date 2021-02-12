@@ -33,6 +33,16 @@
             }
             return shipping;
         }
+
+        function reset() {
+            shizuKasu = 0;
+            buShizu = 0;
+            buKasu = 0;
+            document.getElementById("shizu_kasu").innerHTML = shizuKasu + "回";
+            document.getElementById("bu_shizu").innerHTML = buShizu + "回";
+            document.getElementById("bu_kasu").innerHTML = buKasu + "回";
+            document.getElementById("sum").innerHTML = shizuKasu + buShizu + buKasu + "回";
+        }
     </script>
 </head>
 
@@ -41,7 +51,9 @@
     <div id="share">
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="私は○回しずかすしました！ | 部しずかすボタン" data-show-count="false">Tweet</a>
     </div>
-    <button id="push" onclick="buttonPressed()">PUSH</button>
+    <button id="push1" onclick="buttonPressed()">PUSH</button>
+    <button id="push2" onclick="for(let i = 0; i< 100; i++){buttonPressed()}">PUSH  × 100</button>
+    <button id="push3" onclick="for(let i = 0; i< 10000; i++){buttonPressed()}">PUSH  × 10,000</button>
     <table id="result">
         <tr>
             <td>しずかす:&nbsp;</td>
@@ -60,7 +72,7 @@
             <td id="sum" class="times">0回</td>
         </tr>
     </table>
-    <button id="reset" onclick="window.location.reload()">RESET</button>
+    <button id="reset" onclick="reset()">RESET</button>
 </body>
 
 </html>

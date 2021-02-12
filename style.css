@@ -20,15 +20,28 @@ body {
 
 button {
     position: absolute;
-    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    left: 50%;
     line-height: 150%;
     text-align: center;
 }
 
-#push {
+#push1 {
     top: 35%;
+    left: 10%;
+    font: 4vmax Arial;
+}
+
+#push2 {
+    top: 35%;
+    left: 39%;
+    font: 4vmax Arial;
+}
+
+#push3 {
+    top: 35%;
+    left: 80%;
     font: 4vmax Arial;
 }
 

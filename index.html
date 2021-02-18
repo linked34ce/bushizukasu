@@ -5,73 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="style.css">
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <script>
-        let shizuKasu = 0;
-        let buShizu = 0;
-        let buKasu = 0;
-
-        function buttonPressed() {
-            document.getElementById("display").innerHTML = ship();
-            document.getElementById("shizu_kasu").innerHTML = shizuKasu + "回";
-            document.getElementById("bu_shizu").innerHTML = buShizu + "回";
-            document.getElementById("bu_kasu").innerHTML = buKasu + "回";
-            document.getElementById("sum").innerHTML = shizuKasu + buShizu + buKasu + "回";
-        }
-
-        function ship() {
-            let shipping;
-            if (Math.random() < 0.8) {
-                shizuKasu += 1;
-                shipping = "しずかす"
-            } else if (Math.random() < 0.95) {　　
-                buShizu += 1;
-                shipping = "部しず"
-            } else if (Math.random() < 1) {
-                buKasu += 1;
-                shipping = "部かす"
-            }
-            return shipping;
-        }
-
-        function reset() {
-            shizuKasu = 0;
-            buShizu = 0;
-            buKasu = 0;
-            document.getElementById("shizu_kasu").innerHTML = shizuKasu + "回";
-            document.getElementById("bu_shizu").innerHTML = buShizu + "回";
-            document.getElementById("bu_kasu").innerHTML = buKasu + "回";
-            document.getElementById("sum").innerHTML = shizuKasu + buShizu + buKasu + "回";
-        }
-    </script>
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <div id="display">部しずかす！</div>
-    <div id="share">
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="私は○回しずかすしました！ | 部しずかすボタン" data-show-count="false">Tweet</a>
+    <div id="display">部しずかす<br>ボタン</div>
+    <div id="share_page">
+        <a href="https://twitter.com/share?&url=file:///Users/oki_kurihara/Library/Mobile%20Documents/com~apple~CloudDocs/free_programming/bushizukasu/index.html&amp;text=%23部しずかすボタン%20であなたも運試し．&amp;" target="_blank" rel="noopener">このページをシェア</a>
     </div>
     <button id="push1" onclick="buttonPressed()">PUSH</button>
-    <button id="push2" onclick="for(let i = 0; i< 100; i++){buttonPressed()}">PUSH  × 100</button>
-    <button id="push3" onclick="for(let i = 0; i< 10000; i++){buttonPressed()}">PUSH  × 10,000</button>
+    <button id="push2" onclick="for(let i = 0; i < 100; i++){buttonPressed()}">PUSH × 100</button>
+    <button id="push3" onclick="for(let i = 0; i < 10000; i++){buttonPressed()}">PUSH × 10,000</button>
     <table id="result">
         <tr>
             <td>しずかす:&nbsp;</td>
-            <td id="shizu_kasu" class="times">0回</td>
+            <td id="shizu_kasu" class="cell"></td>
+            <td id="shizu_kasu_percent" class="cell"></td>
         </tr>
         <tr>
             <td>部しず: </td>
-            <td id="bu_shizu" class="times">0回</td>
+            <td id="bu_shizu" class="cell"></td>
+            <td id="bu_shizu_percent" class="cell"></td>
         </tr>
         <tr>
             <td>部かす: </td>
-            <td id="bu_kasu" class="times">0回</td>
-        </tr>
-        <tr>
-            <td>合計: </td>
-            <td id="sum" class="times">0回</td>
+            <td id="bu_kasu" class="cell"></td>
+            <td id="bu_kasu_percent" class="cell"></td>
         </tr>
     </table>
+    <table id="result_total">
+        <tr>
+            <td>合計: </td>
+            <td id="total" class="cell"></td>
+        </tr>
+    </table>
+    <div id="share_result"></div>
     <button id="reset" onclick="reset()">RESET</button>
 </body>
 

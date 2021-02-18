@@ -4,18 +4,23 @@ body {
 
 #display {
     position: absolute;
-    top: 20%;
+    top: 16%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font: 7vmax Arial;
-    line-height: 150%;
+    font: 7vh Arial;
+    line-height: 120%;
     text-align: center;
     white-space: nowrap;
 }
 
-#share {
+a {
+    color: blue;
+}
+
+#share_page {
     float: right;
+    white-space: nowrap;
 }
 
 button {
@@ -23,45 +28,58 @@ button {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     left: 50%;
-    line-height: 150%;
+    font: 3vh Arial;
+    line-height: 125%;
     text-align: center;
+    white-space: nowrap;
 }
 
 #push1 {
-    top: 35%;
-    left: 10%;
-    font: 4vmax Arial;
+    top: 29%;
 }
 
 #push2 {
     top: 35%;
-    left: 39%;
-    font: 4vmax Arial;
 }
 
 #push3 {
-    top: 35%;
-    left: 80%;
-    font: 4vmax Arial;
+    top: 41%;
 }
 
-#result {
-    margin-top: 7%;
+table {
     position: absolute;
-    top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font: 3vmax Arial;
+    font: 3vh Arial;
     line-height: 150%;
     white-space: nowrap;
 }
 
-.times {
+#result {
+    top: 52%;
+}
+
+#result_total {
+    top: 62%;
+}
+
+.cell {
     text-align: right;
 }
 
+#share_result {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font: 2vh Arial;
+    text-align: center;
+    white-space: nowrap;
+}
+
 #reset {
-    top: 90%;
-    font: 2vmax Arial;
+    top: 74%;
+    font: 2vh Arial;
+    white-space: nowrap;
 }

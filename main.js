@@ -53,6 +53,7 @@ function reset() {
     buKasuPercent = (0).toFixed(2);
     rate1 = Math.random();
     rate2 = rate1 + ((1 - rate1) * Math.random());
+    document.getElementById("display").innerHTML = "部しずかす<br>ボタン";
     document.getElementById("shizu_kasu").innerHTML = shizuKasu + "回";
     document.getElementById("bu_shizu").innerHTML = buShizu + "回";
     document.getElementById("bu_kasu").innerHTML = buKasu + "回";

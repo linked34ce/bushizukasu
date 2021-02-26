@@ -5,7 +5,7 @@ let rate2 = rate1 + ((1 - rate1) * Math.random());
 
 window.onload = function() {
     reset();
-    document.getElementById("share_result").innerHTML = "<a href='https://linked34ce.github.io/bushizukasu/&amp;text=%23部しずかすボタン%20【結果】" + makeResult(total, shizuKasu, buShizu, buKasu) + "でした．%20&amp;count=none&amp;lang=ja' target='_blank' rel='noopener'>結果をシェア</a>";
+    document.getElementById("share_result").innerHTML = "<a href='https://twitter.com/share?&url=https://linked34ce.github.io/bushizukasu/&amp;text=%23部しずかすボタン%20【結果】" + makeResult(total, shizuKasu, buShizu, buKasu) + "でした．%20&amp;count=none&amp;lang=ja' target='_blank' rel='noopener'>結果をシェア</a>";
 };
 
 function buttonPressed() {

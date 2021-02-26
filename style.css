@@ -20,6 +20,7 @@ a {
 
 #share_page {
     float: right;
+    font: 2.5vh Arial;
     white-space: nowrap;
 }
 
@@ -73,7 +74,7 @@ table {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font: 2vh Arial;
+    font: 2.5vh Arial;
     text-align: center;
     white-space: nowrap;
 }

@@ -5,7 +5,6 @@ let rate2 = rate1 + ((1 - rate1) * Math.random());
 
 window.onload = function() {
     reset();
-    document.getElementById("share_result").innerHTML = "<a href='https://twitter.com/share?&url=https://linked34ce.github.io/bushizukasu/&amp;text=%23部しずかすボタン%20【結果】" + makeResult(total, shizuKasu, buShizu, buKasu) + "でした．%20&amp;count=none&amp;lang=ja' target='_blank' rel='noopener'>結果をシェア</a>";
 };
 
 function buttonPressed() {
@@ -61,5 +60,5 @@ function reset() {
     document.getElementById("shizu_kasu_percent").innerHTML = "(" + shizuKasuPercent + "%)";
     document.getElementById("bu_shizu_percent").innerHTML = "(" + buShizuPercent + "%)";
     document.getElementById("bu_kasu_percent").innerHTML = "(" + buKasuPercent + "%)";
-    document.getElementById("share_result").innerHTML = "<a href='https://twitter.com/share?&url=file:///Users/oki_kurihara/Library/Mobile%20Documents/com~apple~CloudDocs/free_programming/bushizukasu/index.html&amp;text=%23部しずかすボタン%20【結果】" + makeResult(total, shizuKasu, buShizu, buKasu) + "でした．%20&amp;count=none&amp;lang=ja' target='_blank' rel='noopener'>結果をシェア</a>";
+    document.getElementById("share_result").innerHTML = "<a href='https://twitter.com/share?&url=https://linked34ce.github.io/bushizukasu/&amp;text=%23部しずかすボタン%20【結果】" + makeResult(total, shizuKasu, buShizu, buKasu) + "でした．%20&amp;count=none&amp;lang=ja' target='_blank' rel='noopener'>結果をシェア</a>";
 }
